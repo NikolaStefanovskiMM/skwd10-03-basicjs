@@ -27,3 +27,16 @@ console.log(typeof nullExample);
 console.log(null === undefined);
 console.log(null == undefined);
 console.log(null === undefined);
+
+// primitive values
+console.log(typeof 5.5);
+console.log("hello\nfrom\nSEDC");
+var isActive = true;
+console.log("is Active " + isActive);
+
+// single line comment
+/*this 
+is 
+multiple
+line
+comment*/
