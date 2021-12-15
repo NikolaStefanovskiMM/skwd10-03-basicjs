@@ -87,3 +87,17 @@ x /= y;
 console.log(x);
 x %= y;
 console.log(x);
+
+// Feet in meters example
+var feetInMeters = 0.3048;
+var feet = 70;
+var result = feet * feetInMeters;
+console.log(result);
+
+// area example
+var a = prompt("Enter a side value");
+console.log(a);
+var b = prompt("Enter b side value");
+console.log(b);
+var area = a*b;
+console.log("This is the area " + area);
