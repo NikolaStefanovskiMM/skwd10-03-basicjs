@@ -30,6 +30,6 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 ## Contact 📡
 
-Trainer Name: trainer email
+Andrea Angelova: andrea.angelova@hotmail.com
 
-Assistant Name: assistant email
+Vlatko Tasevski: vlatko.tasevskii@gmail.com
