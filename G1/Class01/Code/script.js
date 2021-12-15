@@ -40,3 +40,18 @@ is
 multiple
 line
 comment*/
+
+// operations
+var breakTest;
+var a = 15;
+var b = 4;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+var sum = a + b;
+console.log(sum);
+console.log(a + 1);
+console.log(a++); // <-- a is not incremented at this point, use ++a if you want to increment a at this point
+console.log(a);
