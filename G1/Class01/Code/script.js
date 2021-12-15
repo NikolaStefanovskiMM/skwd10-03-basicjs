@@ -95,9 +95,15 @@ var result = feet * feetInMeters;
 console.log(result);
 
 // area example
-var a = prompt("Enter a side value");
+var a = 5; // prompt("Enter a side value as a number");
 console.log(a);
-var b = prompt("Enter b side value");
+var b = 4; // prompt("Enter b side value as a number");
 console.log(b);
 var area = a*b;
 console.log("This is the area " + area);
+
+// area of a circle
+var pi = 3.14;
+var radius = 5;
+var area = pi * radius * radius;
+console.log("This is the area of a circle " + area);
