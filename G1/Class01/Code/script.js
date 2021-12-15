@@ -55,3 +55,18 @@ console.log(sum);
 console.log(a + 1);
 console.log(a++); // <-- a is not incremented at this point, use ++a if you want to increment a at this point
 console.log(a);
+
+// comparison
+console.log(a > b);
+console.log(a < b);
+console.log(a <= b);
+console.log(a >= b);
+console.log(5 >= 5);
+var isEqual = 5 == 5;
+console.log("check if 5 is equal to 5 " + isEqual);
+var isNotEqual = 6 != 5;
+console.log("check if 6 is not equal to 5 " + isNotEqual);
+var isNotEqual = 5 != 5;
+console.log("check if 5 is not equal to 5 " + isNotEqual);
+
+console.log("check if 5 is not equal to 5 " + (5!=5).toString());
