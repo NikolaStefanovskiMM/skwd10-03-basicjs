@@ -74,3 +74,16 @@ var isNotEqual = 5 != 5;
 console.log("check if 5 is not equal to 5 " + isNotEqual);
 
 console.log("check if 5 is not equal to 5 " + (5!=5).toString());
+
+// assignment operators
+var x = 5;
+var y = 2;
+x += y;
+x -= y;
+console.log(x);
+x *= y;
+console.log(x);
+x /= y;
+console.log(x);
+x %= y;
+console.log(x);
