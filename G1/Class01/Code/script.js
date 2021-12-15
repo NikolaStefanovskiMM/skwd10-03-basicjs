@@ -1,11 +1,15 @@
 //alert("Hello");
 
-// declaration and inicialization
+// declaration and initialization
 console.log(number1);
 var number1;
 console.log(number1);
 number1 = 5;
 console.log(number1);
+
+var firstName = "Andrea";
+console.log(firstName); //FirstName is not defined <-- case sensitive
+//debugger;
 
 // local and global declaration
 var name = "testing Name";
