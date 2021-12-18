@@ -147,7 +147,24 @@ if (loggedIn) {
 
 // prompt
 //var userInput = prompt();
-var userInput = prompt("Please enter your budget:");
-console.log(userInput);
+//var userInput = prompt("Please enter your budget:");
+//console.log(userInput);
 //console.log(parseInt(userInput)); 
-console.log(parseFloat(userInput));
+//console.log(parseFloat(userInput));
+
+// money example
+var userMoney = prompt("Please enter your budget:");
+var fridayCash = parseInt(userMoney);
+if (isNaN(fridayCash)) {
+    alert("Please enter valid number");
+} else {
+    if (fridayCash >= 50) {
+        console.log("You should go out to a dinner and a movie");
+    } else if (fridayCash >= 35) {
+        console.log("You should go out to a fine meal");
+    } else if (fridayCash >= 12) {
+        console.log("You should go see a movie");
+    } else {
+        console.log("Looks like you'll be watching TV");
+    }
+}
