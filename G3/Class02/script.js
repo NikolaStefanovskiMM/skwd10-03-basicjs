@@ -105,3 +105,5 @@ let minNumber = -Infinity;
 // a7 = 'Cat' && false      // t && f returns false
 // a8 = ''    && false      // f && f returns ''
 // a9 = false && ''         // f && f returns false
+
+
