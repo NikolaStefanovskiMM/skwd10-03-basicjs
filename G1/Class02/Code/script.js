@@ -29,3 +29,32 @@ console.log('2' + 4);
 var userName = "Bob";
 console.log('Hello ' + userName + ', welcome to our page');
 console.log(`Hello ${userName}, welcome to our page`);
+console.log(`just quotes`);
+
+// null & undefined
+var b;
+console.log(b);
+console.log(typeof b);
+var c = null;
+console.log(c);
+console.log(typeof c);
+
+// NaN
+console.log(2 + "test"); // <-- this is converted to string
+console.log(2 - '2'); // <-- this is converted to number, and all the other math operations like /, *, %
+console.log(2 - true); // <-- when true is converted to a number, it returns 1
+console.log(2 * false); // <-- when false is converted to a number, it returns 0
+console.log(2 - "test"); // <-- this can't be converted, so it returns NaN
+var result = 3/'test';
+console.log(result);
+console.log(typeof result);
+
+console.log(NaN == NaN); // <-- returns false
+console.log(NaN === NaN); // <-- returns false
+console.log('check if NaN is NaN ' + isNaN(result));
+console.log('check if string is NaN ' + isNaN("text"));
+console.log('check if string number is NaN ' + isNaN("2"));
+console.log('check if boolean is NaN '+ isNaN(true));
+console.log('check if number is NaN ' + isNaN(2));
+
+console.log('check if NaN is Number.isNaN ' + Number.isNaN(result));
