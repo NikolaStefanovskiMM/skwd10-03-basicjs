@@ -58,3 +58,12 @@ console.log('check if boolean is NaN '+ isNaN(true));
 console.log('check if number is NaN ' + isNaN(2));
 
 console.log('check if NaN is Number.isNaN ' + Number.isNaN(result));
+
+// infinity
+var positiveInfinity = 1/0;
+console.log("positive infinity " + positiveInfinity);
+var negativeInfinity = -1/0;
+console.log("negative infinity " + negativeInfinity);
+var anotherInfinity = -1/-0;
+console.log("positive infinity " + anotherInfinity);
+console.log(Number.POSITIVE_INFINITY);
