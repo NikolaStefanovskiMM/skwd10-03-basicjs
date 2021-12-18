@@ -109,3 +109,45 @@ console.log((points - 12) > minimum);
 console.log((4 >= 2) && (5 != 5));
 console.log(null && false);
 console.log("!'string value': " + !'test')
+
+// inequality
+var test1 = "42";
+var test2 = "43";
+var test3 = "test";
+console.log(test1 > test2);
+console.log(test1 > test3);
+console.log(test1 < test3);
+console.log(test1 == test3);
+
+// if 
+if (4 > 2) {
+    console.log("we are in the if");
+}
+
+var num = 5;
+if (num > 3) num++;
+//num > 3 && num++; <-- this is the same command
+console.log(num);
+
+var bingoPoints = 100;
+if (bingoPoints > 100) {
+    console.log("You won!")
+} else if (bingoPoints === 100) {
+    console.log("You are so close");
+} else {
+   console.log("Better luck next time");
+}
+
+var loggedIn = false;
+if (loggedIn) {
+    console.log("Welcome to our page");
+} else {
+    console.log("Please log in");
+}
+
+// prompt
+//var userInput = prompt();
+var userInput = prompt("Please enter your budget:");
+console.log(userInput);
+//console.log(parseInt(userInput)); 
+console.log(parseFloat(userInput));
