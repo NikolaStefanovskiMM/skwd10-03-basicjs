@@ -67,3 +67,45 @@ console.log("negative infinity " + negativeInfinity);
 var anotherInfinity = -1/-0;
 console.log("positive infinity " + anotherInfinity);
 console.log(Number.POSITIVE_INFINITY);
+
+// logical operators
+console.log("true && true:");
+console.log(true && true);
+console.log("true && false:");
+console.log(true && false);
+console.log("false && false:");
+console.log(false && false);
+
+console.log("true || true:");
+console.log(true || true);
+console.log("true || false:");
+console.log(true || false);
+console.log("false || false:");
+console.log(false || false);
+
+console.log("!false");
+console.log(!false);
+console.log("!true");
+console.log(!true);
+
+console.log("'first value' && 'second value'");
+console.log('first value' && 'second value');
+console.log("24 && 12");
+console.log(24 && 12);
+console.log("24 && false");
+console.log(24 && false);
+
+console.log("24 || 12");
+console.log(24 || 12);
+console.log("false || 12");
+console.log(false || 12);
+
+var minimum = 50;
+var points = 62;
+var hasPassed = points >= minimum;
+console.log(`the student has passed: ${hasPassed}`);
+console.log((5 + 2) != (4 + 3));
+console.log((points - 12) > minimum);
+console.log((4 >= 2) && (5 != 5));
+console.log(null && false);
+console.log("!'string value': " + !'test')
