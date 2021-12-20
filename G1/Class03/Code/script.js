@@ -86,3 +86,14 @@ function hello() {
 hello();
 hello();
 hello();
+
+// functions with arguments
+function sum(num1, num2) {
+    console.log(num1);
+    console.log(num2);
+    console.log("the sum is " + (num1 + num2));
+}
+
+sum(2, 3);
+sum(23, 156);
+sum();
