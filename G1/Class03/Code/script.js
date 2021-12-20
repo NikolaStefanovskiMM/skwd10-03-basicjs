@@ -125,3 +125,14 @@ testFunc();
 console.log(varTest);
 console.log(inputString);
 console.log(funcVariable);
+
+// from Celsius to Fahrenheit
+var userInput = parseInt(prompt("Enter the temperature in celsius"));
+function transform(celsius) {
+    var result = celsius * 1.8 + 32;
+    console.log(result);
+    return result;
+}
+
+var fahrenheit = transform(userInput);
+console.log(fahrenheit);
