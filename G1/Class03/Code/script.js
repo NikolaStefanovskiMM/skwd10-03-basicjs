@@ -1,7 +1,8 @@
 console.log("script connected");
 
 // example what day is it
-var userInput = prompt("Please enter a number between 1 and 7");
+//var userInput = prompt("Please enter a number between 1 and 7");
+var userInput = 2;
 var day = parseInt(userInput);
 
 switch(day) {
@@ -30,3 +31,22 @@ switch(day) {
         console.log("Please enter a valid number between 1 and 7");
         break;
 }
+
+// switch example with logical operators
+var userMoney = prompt("Please enter your budget:");
+var fridayCash = parseInt(userMoney);
+switch(true) {
+    case fridayCash >= 50: // 60 === (60 >= 50) => 60 === true
+        console.log("You should go out to a dinner and a movie");
+        break;
+    case fridayCash >= 35:
+        console.log("You should go out to a fine meal");
+        break;
+    case fridayCash >= 12:
+        console.log("You should go see a movie");
+        break;
+    default:
+        console.log("Looks like you'll be watching TV");
+        break;
+}
+// this is not a good example to use switch
