@@ -88,12 +88,22 @@ hello();
 hello();
 
 // functions with arguments
-function sum(num1, num2) {
+function sum(num1 = 0, num2 = 0) {
     console.log(num1);
     console.log(num2);
-    console.log("the sum is " + (num1 + num2));
+    var result = num1 + num2;
+    console.log("the sum is " + result);
+    return result;
 }
 
 sum(2, 3);
 sum(23, 156);
 sum();
+var sumOfTwoNumbers = sum(1, 2);
+console.log(sumOfTwoNumbers);
+sum(1, 2, 3);
+sum(1);
+sum();
+sum(-4, 5);
+var number1 = 6;
+sum(number1);
