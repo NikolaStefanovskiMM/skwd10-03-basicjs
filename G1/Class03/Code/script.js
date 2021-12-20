@@ -107,3 +107,21 @@ sum();
 sum(-4, 5);
 var number1 = 6;
 sum(number1);
+
+// function scopes
+var inputString = '5';
+var inputNumber = Number(inputString);
+var varTest = "Hello";
+console.log(inputNumber);
+
+function testFunc() {
+    funcVariable = 7; // <-- this will create a global variable
+    var inputString = "text";
+    varTest = "Hello again";
+    console.log(funcVariable);
+    console.log(inputString);
+}
+testFunc();
+console.log(varTest);
+console.log(inputString);
+console.log(funcVariable);
