@@ -53,7 +53,8 @@ switch(true) {
 // this is not a good example to use switch
 
 // example what day is it refactored
-var userInput = prompt("Please enter a number between 1 and 7");
+//var userInput = prompt("Please enter a number between 1 and 7");
+var userInput = 2;
 var day = parseInt(userInput);
 
 switch(day) {
@@ -76,3 +77,33 @@ switch(day) {
         console.log("Please enter a valid number between 1 and 7");
         break;
 }
+
+// functions
+function hello() {
+    console.log("hello from SEDC");
+}
+
+hello();
+hello();
+hello();
+
+// functions with arguments
+function sum(num1 = 0, num2 = 0) {
+    console.log(num1);
+    console.log(num2);
+    var result = num1 + num2;
+    console.log("the sum is " + result);
+    return result;
+}
+
+sum(2, 3);
+sum(23, 156);
+sum();
+var sumOfTwoNumbers = sum(1, 2);
+console.log(sumOfTwoNumbers);
+sum(1, 2, 3);
+sum(1);
+sum();
+sum(-4, 5);
+var number1 = 6;
+sum(number1);
