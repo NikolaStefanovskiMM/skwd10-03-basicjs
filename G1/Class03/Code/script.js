@@ -107,6 +107,7 @@ sum();
 sum(-4, 5);
 var number1 = 6;
 sum(number1);
+sum(null);
 
 // function scopes
 var inputString = '5';
@@ -127,7 +128,7 @@ console.log(inputString);
 console.log(funcVariable);
 
 // from Celsius to Fahrenheit
-var userInput = parseInt(prompt("Enter the temperature in celsius"));
+var userInput = 66; //parseInt(prompt("Enter the temperature in celsius"));
 function transform(celsius) {
     var result = celsius * 1.8 + 32;
     console.log(result);
@@ -136,3 +137,14 @@ function transform(celsius) {
 
 var fahrenheit = transform(userInput);
 console.log(fahrenheit);
+
+// age example
+function calcAge (birthYear) {
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    console.log(currentDate);
+    console.log(currentYear);
+    return currentYear - birthYear;
+}
+var age = calcAge(1995);
+console.log(`You are ${age} years old`);
