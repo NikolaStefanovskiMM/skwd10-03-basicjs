@@ -96,8 +96,8 @@ function changeName() {
     firstName = "Bob";
     lastName = "Bobski";
     // defining local variables and not changing global variables
-    let firstName = "Bob";
-    let lastName = "Bobski";
+    // let firstName = "Bob";
+    // let lastName = "Bobski";
 }
 
 changeName();
@@ -106,4 +106,39 @@ function printName(fName, lName) {
     console.log("Hello from " + fName + " " + lName);
 }
 
-printName(firstName, lastName);
+// printName(firstName, lastName);
+
+
+
+// this is variable declared on global level
+let message = "Outside the function";						
+function warning(message) { // => message is declared as parameter in the function its not the same with the global variable message
+    console.log(message);
+}
+
+
+warning("Inside the function");
+console.log(message);
+
+//Declaration of both functions
+function farToCel(celsius){
+	let result = celsius * 1.8 + 32;
+	return result;
+}
+function celToFar(farenheits){
+	let result = (5/9) * (farenheits-32);
+	return result;  
+}
+
+//The person chooses what to calculate
+let personChoice = prompt("Enter F for farenheit and C for celsius");
+let personInput = parseInt(prompt("Please enter value:"));
+
+if (personChoice === "F") {
+	console.log(`${celToFar(personInput)}C`);
+} else if (personChoice === "C") {
+    let result = farToCel(personInput);
+	console.log(`${result}F`);
+} else {
+	console.log("ERROR!");
+}
