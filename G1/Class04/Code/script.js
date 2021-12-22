@@ -100,7 +100,7 @@ console.log(digits);
 
 var userInput;
 do {
-    userInput = parseInt(prompt("Please enter a valid number"));
+    userInput = 101;//parseInt(prompt("Please enter a valid number"));
 } while(isNaN(userInput));
 console.log(userInput);
 
@@ -111,3 +111,19 @@ console.log(userInput);
 // }
 // console.log(userInput);
 
+// for loops
+for (let i = 0; i < 10; i++) {
+    console.log("this is in the for loop " + i);
+}
+
+
+for(let counter = numArray.length - 1; counter >= 0 ; counter--) {
+    console.log(numArray[counter]);
+}
+
+console.log("printing with for of in array ")
+for (let arrayItem of numArray) {
+    console.log(arrayItem);
+}
+
+// numArray.forEach(arrayItem => console.log(arrayItem)); <-- another way to access array items
