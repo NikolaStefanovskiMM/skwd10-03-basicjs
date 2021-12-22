@@ -58,3 +58,83 @@ while(x < 10) {
     x = ++x; // <-- if we never increase x, it will be an infinite loop
 }
 console.log("outside the while " + x);
+
+var counter = 0;
+console.log("printing the values from an array");
+while(counter <= bigArray.length - 1) { // <-- same as counter < bigArray.length
+    console.log(bigArray[counter]);
+    counter++;
+}
+
+// max item in array example
+var max = 0;
+var numArray = [2,15, 56,77,23,44,75, 22, 12,5];
+var counter = 0;
+while(counter < numArray.length) {
+    if (numArray[counter] > max) {
+        max = numArray[counter];
+    }
+    counter++;
+}
+console.log("this is the largest number in the array " + max);
+
+// calculate sum example
+let result = 1;
+let i = 101;
+while(i <= 150){
+    result *= Math.pow(i, 2);
+    i++;
+}
+console.log(result);
+
+// print the digits in a number example
+var userInput = 456;//parseInt(prompt("Please enter a number"));
+var digits = [];
+while(userInput) {
+    var digit = userInput % 10;
+    digits.unshift(digit);
+    userInput = parseInt(userInput / 10);
+}
+console.log(digits);
+
+
+var userInput;
+do {
+    userInput = 101;//parseInt(prompt("Please enter a valid number"));
+} while(isNaN(userInput));
+console.log(userInput);
+
+// same as the example above
+// var userInput = parseInt(prompt("Please enter a valid number"));
+// while(isNaN(userInput)) {
+//     userInput = parseInt(prompt("Please enter a valid number"));
+// }
+// console.log(userInput);
+
+// for loops
+for (let i = 0; i < 10; i++) {
+    console.log("this is in the for loop " + i);
+}
+
+for(let counter = numArray.length - 1; counter >= 0 ; counter--) {
+    console.log(numArray[counter]);
+}
+
+console.log("printing with for of in array ")
+for (let arrayItem of numArray) {
+    console.log(arrayItem);
+}
+
+// numArray.forEach(arrayItem => console.log(arrayItem)); <-- another way to access array items
+
+// happy number example
+var happyNumber = 7;
+var numbers = [1, "text", 6, 8, 3, 7, 5, 3, 1];
+console.log("loop until you get the happy number");
+for(let num of numbers) {
+    if (isNaN(num))
+        continue;
+    console.log(num);
+    if (num === happyNumber)
+        break;
+}
