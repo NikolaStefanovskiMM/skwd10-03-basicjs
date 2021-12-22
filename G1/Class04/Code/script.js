@@ -116,7 +116,6 @@ for (let i = 0; i < 10; i++) {
     console.log("this is in the for loop " + i);
 }
 
-
 for(let counter = numArray.length - 1; counter >= 0 ; counter--) {
     console.log(numArray[counter]);
 }
@@ -127,3 +126,15 @@ for (let arrayItem of numArray) {
 }
 
 // numArray.forEach(arrayItem => console.log(arrayItem)); <-- another way to access array items
+
+// happy number example
+var happyNumber = 7;
+var numbers = [1, "text", 6, 8, 3, 7, 5, 3, 1];
+console.log("loop until you get the happy number");
+for(let num of numbers) {
+    if (isNaN(num))
+        continue;
+    console.log(num);
+    if (num === happyNumber)
+        break;
+}
