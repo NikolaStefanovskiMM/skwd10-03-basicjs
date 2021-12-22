@@ -133,16 +133,16 @@ function getInputAsNumber() {
     // if (!Number.isNaN(parsedInput)) {
     //     return parsedInput;
     // }
-
-    // return 0;
     
+    // return 0;
+
     if (Number.isNaN(parsedInput)) {
         return 0;
     } else {
         return parsedInput;
     }
 }
-
+// command: alt + shift + f  => format code based on setting in VS code
 
 // let number = getInputAsNumber();
 // console.log(number);
@@ -155,3 +155,44 @@ function getInputAsNumber() {
 
 // number = getInputAsNumber();
 // console.log(number);
+
+function divide(num1, num2) {
+    // add validation for numbers
+    // add logic
+    // return value
+}
+
+// bad function :)
+function returnEverything() {
+    let expresion = 0;
+
+    if (expresion) {
+        return 4;
+    } else if (expresion) {
+        return true;
+    } else {
+        return "Trajan";
+    }
+}
+
+function isUserMature2(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function grantAccess(firstName, lastName, age) {
+    if (isUserMature2(age)) {
+        console.log(`Hi ${firstName} ${lastName}, welcome to this site!`);
+    } else {
+        console.log(`Sorry ${firstName} ${lastName}, you are not allowed!`);
+    }
+}
+
+// function something(firstName, lastName, age, isBald, mothersMaidenName) {
+    
+// }
+
+// grantAccess("Trajan", "Stevkovski", 33);
