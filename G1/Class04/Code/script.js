@@ -49,3 +49,12 @@ console.log("this item was removed " + bigArray.pop());
 console.log(bigArray);
 console.log("this item was removed " + bigArray.shift());
 console.log(bigArray);
+
+// loops
+var x = 0;
+while(x < 10) {
+    console.log("in the while " + x);
+    document.write(x + "<br>");
+    x = ++x; // <-- if we never increase x, it will be an infinite loop
+}
+console.log("outside the while " + x);
