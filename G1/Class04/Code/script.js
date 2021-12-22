@@ -58,3 +58,22 @@ while(x < 10) {
     x = ++x; // <-- if we never increase x, it will be an infinite loop
 }
 console.log("outside the while " + x);
+
+var counter = 0;
+console.log("printing the values from an array");
+while(counter <= bigArray.length - 1) { // <-- same as counter < bigArray.length
+    console.log(bigArray[counter]);
+    counter++;
+}
+
+// max item in array example
+var max = 0;
+var numArray = [2,15, 56,77,23,44,75, 22, 12,5];
+var counter = 0;
+while(counter < numArray.length) {
+    if (numArray[counter] > max) {
+        max = numArray[counter];
+    }
+    counter++;
+}
+console.log("this is the largest number in the array " + max);
