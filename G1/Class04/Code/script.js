@@ -77,3 +77,22 @@ while(counter < numArray.length) {
     counter++;
 }
 console.log("this is the largest number in the array " + max);
+
+// calculate sum example
+let result = 1;
+let i = 101;
+while(i <= 150){
+    result *= Math.pow(i, 2);
+    i++;
+}
+console.log(result);
+
+// print the digits in a number example
+var userInput = 456;//parseInt(prompt("Please enter a number"));
+var digits = [];
+while(userInput) {
+    var digit = userInput % 10;
+    digits.unshift(digit);
+    userInput = parseInt(userInput / 10);
+}
+console.log(digits);
