@@ -60,16 +60,98 @@ function sumOfThreeNumbers(num, num1, num2) {
     return sum;
 }
 
-let sumOfThreeNumbersResult = sumOfThreeNumbers(1, 2, 3); // => 6
-console.log(sumOfThreeNumbersResult);
+// let sumOfThreeNumbersResult = sumOfThreeNumbers(1, 2, 3); // => 6
+// console.log(sumOfThreeNumbersResult);
 
-let sumOfThreeNumbersResult1 = sumOfThreeNumbers(4, 5, 6); // => 15
-console.log(sumOfThreeNumbersResult1);
+// let sumOfThreeNumbersResult1 = sumOfThreeNumbers(4, 5, 6); // => 15
+// console.log(sumOfThreeNumbersResult1);
 
-let sumOfThreeNumbersResult2 = sumOfThreeNumbers(7, 8, 9); // => 24
-console.log(sumOfThreeNumbersResult2);
+// let sumOfThreeNumbersResult2 = sumOfThreeNumbers(7, 8, 9); // => 24
+// console.log(sumOfThreeNumbersResult2);
 
-let result = sumOfThreeNumbers(sumOfThreeNumbersResult, sumOfThreeNumbersResult1, sumOfThreeNumbersResult2); // => 45
-console.log(result);
+// let result = sumOfThreeNumbers(sumOfThreeNumbersResult, sumOfThreeNumbersResult1, sumOfThreeNumbersResult2); // => 45
+// console.log(result);
 
-let result1 = sumOfThreeNumbers(1, 2, result);
+// let result1 = sumOfThreeNumbers(1, 2, result);
+
+
+
+function three() {
+    return 3;
+    // every thing after return is not usable and it will NOT be executed
+    // console.log("Trajan")
+    // let a = 3 + 4;
+}
+
+// let a = three();
+
+function printMessage(message) {
+    console.log(message);
+}
+
+function isUserMature(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// let isMature = isUserMature(22);
+
+// if (isMature) {
+//     printMessage("User is over 18");
+// } else {
+//     printMessage("User is under 18");
+// }
+
+// if (isUserMature(22)) {
+//     printMessage("User is over 18");
+// } else {
+//     printMessage("User is under 18");
+// }
+
+function changeToUpperCaseLeters(input) {
+    if (typeof input === 'string') {
+        let allUpperCase = input.toUpperCase();
+        return allUpperCase;
+    } else {
+        console.log("Error input not valid");
+        return input;
+    }
+}
+
+// let input = "AbCkienauAsid";
+// let result = changeToUpperCaseLeters(input);
+// printMessage(result);
+
+function getInputAsNumber() {
+    let screenInput = prompt("Please enter a number!");
+
+    let parsedInput = parseInt(screenInput);
+
+    // if (!Number.isNaN(parsedInput)) {
+    //     return parsedInput;
+    // }
+
+    // return 0;
+    
+    if (Number.isNaN(parsedInput)) {
+        return 0;
+    } else {
+        return parsedInput;
+    }
+}
+
+
+// let number = getInputAsNumber();
+// console.log(number);
+
+// number = getInputAsNumber();
+// console.log(number);
+
+// number = getInputAsNumber();
+// console.log(number);
+
+// number = getInputAsNumber();
+// console.log(number);

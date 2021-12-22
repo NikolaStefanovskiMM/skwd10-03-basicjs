@@ -32,4 +32,4 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 Trainer Name: stojanovskatanja@hotmail.com
 
-Assistant Name: bojandamcevski@gmail.com
+Assistant Name: bojandamcevski@yahoo.com
