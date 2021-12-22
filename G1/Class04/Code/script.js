@@ -96,3 +96,18 @@ while(userInput) {
     userInput = parseInt(userInput / 10);
 }
 console.log(digits);
+
+
+var userInput;
+do {
+    userInput = parseInt(prompt("Please enter a valid number"));
+} while(isNaN(userInput));
+console.log(userInput);
+
+// same as the example above
+// var userInput = parseInt(prompt("Please enter a valid number"));
+// while(isNaN(userInput)) {
+//     userInput = parseInt(prompt("Please enter a valid number"));
+// }
+// console.log(userInput);
+
