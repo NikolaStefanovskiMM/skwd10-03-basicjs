@@ -30,6 +30,5 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 ## Contact 📡
 
-Trainer Name: trainer email
-
-Assistant Name: assistant email
+* Aleksandar Manasiev : a@manasiev.dev
+* George Dimitrov : dimitrov.gjorge@protonmail.com
