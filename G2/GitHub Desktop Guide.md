@@ -84,6 +84,3 @@ If everything is fine, share the link with us so we can check your work.
 #### This is a beginner guide how to use GitHub with the desktop application, in the next classes we will learn how to use Git technology in a more advance way.
 
 If you have any kind of issues, please let us know so we can help you.
-
-#### Trainer [Dejan Jovanov](https://www.facebook.com/d.jovanov) - djovanov92@gmail.com
-#### Assistant [Aleksandar Manasiev](https://www.facebook.com/a.manasiev/) - manasiev.design@gmail.com
