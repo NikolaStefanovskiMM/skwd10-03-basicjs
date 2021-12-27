@@ -61,3 +61,20 @@ numbers[0] = 9999;
 
 console.log(numbers);
 console.log("Lenght of numbers array " + numbers.length);
+
+// here we will not save the value
+numbers.pop();
+// here we will give the value of the last element to some variable
+let lastElementWithPop = numbers.pop();
+console.log("last element: " + lastElementWithPop);
+
+let firstElementWithShift = numbers.shift();
+console.log("first element: " + firstElementWithShift);
+
+// let a = [1, 2, 3];
+
+// function something(test) {
+//     // lots of code
+// }
+
+// something(a);
