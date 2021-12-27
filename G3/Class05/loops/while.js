@@ -109,3 +109,12 @@ console.log(numbersArr);
 console.log("Max value is " + max);
 
 // Math.pow(3, 2); => 3 na kvadrat
+
+
+// let result = 0;
+// let i = 101;
+// while (i <= 150) {
+//     result += Math.pow(i, 2);
+//     i++;
+// }
+// console.log(result);
