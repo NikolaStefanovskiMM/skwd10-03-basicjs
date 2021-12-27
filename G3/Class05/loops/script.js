@@ -2,7 +2,7 @@ let result = 0;
 
 //result = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13... + 100;
 
-let end = 50;
+let end = -1;
 let start = 0;
 
 while (start <= end) {
@@ -68,3 +68,44 @@ while (counter < 5) {
     result1 += 100;
     counter += 1;
 }
+
+let numbers = [1, 2, 3, 12, 12, 32, 342, 4234, 12312, 4342, 34324];
+
+let counter1 = 0;
+while (counter1 < numbers.length) {
+    let element = numbers[counter1];
+    console.log(`Element on index ${counter1} has value ${element}`);
+    counter1 += 1;
+}
+
+
+let numbersArr = [];
+
+// we want to fill the array with 10 values (numbers)
+let i = 0;
+while (i < 10) {
+    // get number from screen
+    let input = parseInt(prompt("Please enter a number"));
+    // add value to numbersArr
+    numbersArr.push(input);
+    // increase i
+    i += 1;
+}
+
+// we want to determent witch is the largest value;
+// max value at start is the first number in the array
+let max = numbersArr[0];
+// we set i to 1 cuz the first number of the array is currently the largest value and we do NOT need to check it again
+i = 1;
+while (i < numbersArr.length) {
+    let element = numbersArr[i];
+    if (max < element) {
+        max = element;
+    }
+    i += 1;
+}
+
+console.log(numbersArr);
+console.log("Max value is " + max);
+
+// Math.pow(3, 2); => 3 na kvadrat
