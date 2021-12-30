@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>HTML EVENT HANDLERS</h1>
+    <div id="greet_container">
+      <h1>Hello world</h1>
+      <h3>We learn about events in javascript amigo :)</h3>
+    </div>
+    <button onclick="greetingMessage()">PRINT GREET MESSAGE!</button>
+    <button id="toggle_btn" onclick="toggleGreetContainer()">HIDE TEXT!</button>
+    <hr />
+    <br />
+
+    <h3>Product list:</h3>
+    <div id="products_container"></div>
+    <button onclick="printProducts(productsList)">Print Products</button>
+
+    <hr />
+    <br />
+    <br />
+    <h1>BETTER EVENT HANDLING</h1>
+    <br />
+    <br />
+    <h1 id="textToChange">This text will be changed :)</h1>
+    <button id="change_text_btn">Change text</button>
+    <hr />
+    <br />
+    <br />
+    <h1 id="loremText">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est temporibus
+      possimus minus maiores atque tempora saepe tenetur ab consequuntur neque!
+    </h1>
+    <h1 style="cursor: pointer" id="headingToBeClicked">Click me dudeee :))</h1>
+    <hr />
+    <br />
+    <br />
+    <input type="text" name="ourInput" id="myInput" />
+    <hr />
+    <br />
+    <br />
+    <h1>Movies List</h1>
+    <button id="moviesBtn">Print movies!</button>
+    <div id="moviesContainer"></div>
+    <hr />
+    <br />
+    <br />
+    <h1 style="cursor: pointer" id="sayHelloHeading">Say hello :)</h1>
+    <hr />
+    <br />
+    <br />
+    <input type="text" id="userNameInput" />
+    <button id="loginBtn">Login</button>
+    <hr />
+    <br />
+    <br />
+    <input type="text" id="phoneBookID" placeholder="Enter Contact Name" />
+    <span style="display: none">Please provide input</span>
+    <button id="addToPhoneBook">ADD TO PHONE BOOK</button>
+    <div id="phoneBookContainer"></div>
+
+    <hr />
+    <br />
+    <br />
+
+    <div
+      style="width: 300px; height: 300px; border: 1px solid red"
+      id="parentDiv"
+    >
+      <div
+        style="width: 150px; height: 150px; border: 1px solid blue"
+        id="childDiv"
+      ></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
