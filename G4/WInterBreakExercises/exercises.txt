@@ -1,0 +1,77 @@
+**Functions
+
+// Task 1: Convert Minutes into Seconds
+// Write a function that takes an integer minutes and converts it to seconds.
+
+// Task 2: Return the Next Number from the Integer Passed
+// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+// Task 3: Convert Hours into Seconds
+// Write a function that converts hours into seconds.
+
+// Task 4: Return the Remainder from Two Numbers
+// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. 
+// The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+// Task 5: The Farm Problem
+// In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+
+// chickens = 2 legs
+// cows = 4 legs
+// pigs = 4 legs
+// The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+
+// Task 6: Compare Strings by Count of Characters
+// Create a function that takes two strings as arguments and return either true or false depending on whether the total number of 
+// characters in the first string is equal to the total number of characters in the second string.
+
+// Task 7: Is the Word Singular or Plural?
+// Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+
+// Task 8: Case Insensitive Comparison
+// Write a function that validates whether two strings are identical. Make it case insensitive.
+
+// Task 9: Convert Number to Corresponding Month Name
+// Create a function that takes a number and returns its corresponding month name as a string. For example, if you're given 3 as input, 
+// your function should return "March", because March is the 3rd month.
+
+
+// Task 10: Write a functions that accepts one parameter and checks if the parameter is a Truthy or Falsy?
+
+** Arrays
+
+// Task 0: Create an array
+// Create a function that takes an number and creates array with all numbers till that number.
+
+// Task 1: Return the First Element in an Array
+// Create a function that takes an array and returns the first element.
+
+// Task 2: Reverse an Array
+// Write a function to reverse an array.
+
+// Task 3: Find the Index
+// Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
+
+// Task 4: Check if an Array Contains a Given Number
+// Write a function to check if an array contains a particular number.
+
+// Task 5: Negate the Array of Numbers
+// Given an array of numbers, negate all elements contained within.
+
+// Task 6: Difference of Max and Min Numbers in Array
+// Create a function that takes an array and returns the difference between the biggest and smallest numbers.
+
+// Task 7: Multiply by Length
+// Create a function to multiply all values in an array by the amount of values in that array.
+
+// Task 8: Hurdle Jump
+// Create a function that takes an array of hurdle heights and a jumper's jump height, and determine whether or not the hurdler can clear all the hurdles.
+// A hurdler can clear a hurdle if their jump height is greater than or equal to the hurdle height.
+
+// Task 9: Generate a Countdown of Numbers in an Array
+// Create a function that takes a number as an argument and returns an array of numbers counting down from this number to zero.
+
+// Task 10: Odd Up, Even Down
+// Create a function that goes through the array, incrementing (+1) for each odd number and decrementing (-1) for each even number.
+
+
