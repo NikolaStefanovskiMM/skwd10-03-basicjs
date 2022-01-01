@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript basic - Events</title>
+</head>
+<body>
+    <!-- First way of binding an event to an element -->
+    <a href="#" onclick="hideElementDescription()">Click me if you want to hide element below</a><br />
+    <span id="elementDescriptionId">Element Description</span>
+
+    <br /><br />
+    <!-- Second way of binding an event to an element -->
+    <input type="text" id="secondWayOfBindingElement" value="Test">
+
+    <br /><br />
+    <!-- Overwrite of event on some element -->
+    <button id="btnHello">Say Hello</button>
+    <br /><br />
+
+    <br /><br />
+    <!-- Third way of binding an event to an element -->
+    <!-- Sum of two numbers inputted -->
+    <span>Enter first number: <input placeholder="Insert first number" id="firstNumberFromInput"></span><br />
+    <span>Enter second number: <input placeholder="Insert second number" id="secondNumberFromInput"></span><br />
+    <button id="sumOfTwoNumbers">Sum</button><br />
+
+    <br /><br />
+    <!-- Double click event -->
+    <button id="btnDBClick">Double click me :D</button>
+    <br /><br />
+    <!-- On press enter -->
+    <span>Say something to SEDC-G1 when you press enter: <input id="SEDC-G1" /></span>
+
+    <br /><br />
+     <!-- How useCapture works? -->
+    <p>useCapture flow and values</p>
+    <img src="images/useCapture flow.png" alt="useCapture flow" width="35%">
+    <img src="images/useCapture values.png" alt="useCapture values" width="35%">
+
+
+    <script src="script.js"></script>
+</body>
+</html>

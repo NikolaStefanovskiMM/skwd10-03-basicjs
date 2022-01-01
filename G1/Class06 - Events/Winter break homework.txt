@@ -1,0 +1,60 @@
+1. When a user inserts a birthday date calculate if that user is an adult (if you don't know how to work with Date object, the value can be inserted as a number or as a string separated with '/' character)
+Ex. 
+	15021999 -> Adult
+	23/10/2015 -> Not Adult
+
+if the date (day and month) user insert is equal with today's date (day and month) write "Happy Birthday, you are/are not adult"
+Ex. 
+	let assume today's date is 01/01/2022, and the user inserts 01/01/1996 -> "Happy Birthday, you are adult"
+	let assume today's date is 01/01/2022, and the user inserts 01/01/2010 -> "Happy Birthday, you are not adult"
+	
+	
+2. Make a calculator. We expect you to create HTML with CSS where the user can click on the buttons and do mathematical operations (no need to create complex operations, but if you want feel free to implement those operations as well).
+
+
+3. Create a flag using a matrix. The user inserts square matrix order and the result should be a flag
+Ex. 
+	let assume matrix order is 5 -> the result should be equal to 
+	[[ "*", "*", "*", "*", "*" ], [ "*", "+", "+", "+", "*" ], [ "*", "+", "+", "+", "*" ], [ "*", "+", "+", "+", "*" ], [ "*", "*", "*", "*", "*" ]]
+	
+	or better representation of the result
+	
+	*****
+	*+++*
+	*+++*
+	*+++*
+	*****
+	
+	
+4. Calculate the sum and difference of the matrix. The calculations need to be done horizontally, vertically and in total (number should be in the range of -10 and 10)
+Ex. 
+	let assume the matrix is [[1, 2, 3], [4, 5, 6], [7, 8, 9]] ->
+	
+	SUM results
+		- horizontally = [6, 15, 24]
+		- vertically = [12, 15, 18]
+		- total = 45
+	
+	Differance results
+		- horizontally = [-4, -7, -10]
+		- vertically = [-10, -11, -12]
+		- total = -43
+		
+		
+5. Check if the matrix is an identity matrix. An identity matrix is a square matrix in which all entries on the main diagonal are equal to 1 and the rest are 0
+Ex. 
+	let assume the matrix is [[1, 0, 0], [0, 1, 0], [0, 0, 1]] -> write "The matrix is identity matrix"
+	let assume the matrix is [[1, 0, 1], [0, 1, 0], [0, 1, 1], [1, 1, 1]] -> write "The matrix is not identity matrix"
+	
+	
+6*. Sum and multiply elements in upper triangular and lower triangular matrix (number should be in the range of 0 and 10). Make sure to convert the matrix to be upper or lower triangular matrix!
+Ex.
+	let assume the matrix is [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+	
+	Upper triangular matrix:
+		SUM = 26
+		PRODUCT = 1620
+		
+	Lower triangular matrix:
+		SUM = 34
+		PRODUCT = 10080
