@@ -21,7 +21,7 @@ Create a web calculator with all the standard features. The calculator should ha
 
 ## Information on the homework
 
-* Due Date: 	15.01.2020
+* Due Date: 	22.01.2022
 * Contact: 
     * trajanstevkovski@gmail.com
     * nikoladalchevski@gmail.com
