@@ -28,3 +28,10 @@ var hotel = {
 console.log(hotel.name);
 console.log(hotel.checkAvailability());
 console.log(hotel["booked"]);
+
+const keys = Object.keys(hotel);
+console.log(keys);
+const values = Object.values(hotel);
+console.log(values);
+const hasName = hotel.hasOwnProperty("name1");
+console.log(hasName);
