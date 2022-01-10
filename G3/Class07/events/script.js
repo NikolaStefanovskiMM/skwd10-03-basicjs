@@ -113,3 +113,16 @@ let divElement = document.getElementById("someDiv");
 //         errorDiv.innerText = '';
 //     }
 // });
+
+let changeColor = true;
+document.getElementById("change-me").addEventListener('click', function () {
+    let element = document.getElementById("text");
+
+    if (changeColor) {
+        element.style.color = 'red';
+        changeColor = !changeColor;
+    } else {
+        element.style.color = 'black';
+        changeColor = !changeColor;
+    }
+});
