@@ -87,3 +87,19 @@ let person = {
     person[key] += " changed";
  });
  console.log(person);
+
+ // constructor function
+ function Hotel(name, rooms, booked) {
+     this.name = name;
+     this.rooms = rooms;
+     this.booked = booked;
+     this.hasParking = true;
+     this.checkAvailability = function () {
+         return this.rooms - this.booked;
+     }
+ }
+
+ const hotel1 = new Hotel("Hilton", 45, 12);
+ const hotel2 = new Hotel("Rusia", 40, 10);
+ console.log(hotel1);
+ console.log(hotel2);
