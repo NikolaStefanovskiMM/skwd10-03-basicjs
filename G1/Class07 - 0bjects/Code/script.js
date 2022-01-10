@@ -57,3 +57,17 @@ if (userLiteral) {
 if (Object.keys(userLiteral).length > 0) {
     console.log("object has keys");
 }
+
+// reference types
+console.log("this is the first user name " + user.name);
+const user2 = user;
+console.log("this is the second user name " + user2.name);
+user2.name = "Andrea";
+console.log("this is the first user name " + user.name);
+console.log("this is the second user name " + user2.name);
+
+let firstNum = 5;
+let secondNum = firstNum;
+secondNum = 10;
+console.log(firstNum);
+console.log(secondNum);
