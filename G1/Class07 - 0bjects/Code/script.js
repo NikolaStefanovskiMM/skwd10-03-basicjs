@@ -134,3 +134,18 @@ let person = {
  shape.showWidth = showWidth;
  console.log(shape.showWidth());
 console.log(showWidth());
+
+// car example
+function Car(model, color, year, fuel, fuelConsumption) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+    this.fuel = fuel;
+    this.fuelConsumption = fuelConsumption;
+    this.calculate = function (distance) {
+        return distance * (this.fuelConsumption/100)
+    }
+}
+var car1 = new Car("toyota", "blue", 2018, "disel", 6.6);
+console.log(car1);
+console.log(car1.calculate(12));
