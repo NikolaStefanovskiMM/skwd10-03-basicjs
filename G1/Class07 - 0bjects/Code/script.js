@@ -35,3 +35,25 @@ const values = Object.values(hotel);
 console.log(values);
 const hasName = hotel.hasOwnProperty("name1");
 console.log(hasName);
+
+// constructor notation
+var user = new Object(); // {}
+console.log(user);
+user.name = "Jon";
+user.surname = "Doe";
+console.log(user);
+user.name = "Change";
+console.log(user);
+user.printName = function () {
+    console.log(this.name + " " + this.surname);
+}
+user.printName();
+var userLiteral = {};
+console.log(userLiteral)
+
+if (userLiteral) {
+    console.log("{} is true?");
+}
+if (Object.keys(userLiteral).length > 0) {
+    console.log("object has keys");
+}
