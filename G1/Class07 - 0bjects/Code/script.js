@@ -95,6 +95,7 @@ let person = {
      this.booked = booked;
      this.hasParking = true;
      this.checkAvailability = function () {
+         console.log(this);
          return this.rooms - this.booked;
      }
  }
@@ -103,3 +104,22 @@ let person = {
  const hotel2 = new Hotel("Rusia", 40, 10);
  console.log(hotel1);
  console.log(hotel2);
+ console.log(hotel2.checkAvailability());
+
+ // this and scopes
+ console.log(this.innerHeight);
+ console.log(this.innerWidth);
+
+ function getSize() {
+     return this.innerHeight;
+ }
+ console.log("this is the inner height of the browser " + getSize());
+
+ let size = {
+     innerHeight: 50,
+     innerWidth: 60,
+     getObjSize: function() {
+         return this.innerHeight;
+     }
+ };
+ console.log("this is the inner height of the object " + size.getObjSize());
