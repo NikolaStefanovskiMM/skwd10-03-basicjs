@@ -123,3 +123,14 @@ let person = {
      }
  };
  console.log("this is the inner height of the object " + size.getObjSize());
+
+ var width = 600;
+ let shape = {
+     width: 300
+ };
+ function showWidth() {
+     return this.width;
+ }
+ shape.showWidth = showWidth;
+ console.log(shape.showWidth());
+console.log(showWidth());
