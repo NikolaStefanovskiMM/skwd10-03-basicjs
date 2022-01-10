@@ -53,11 +53,63 @@ let divElement = document.getElementById("someDiv");
 //     console.log(event);
 // })
 
-let inputElement = document.getElementById('username');
-inputElement.addEventListener('blur', function (event) {
-    console.log(event.target.value);
-});
+// let inputElement = document.getElementById('username');
+// inputElement.addEventListener('blur', function (event) {
+//     console.log(event.target.value);
+// });
 
-inputElement.addEventListener('keydown', function (event) {
-    console.log(event.target.value);
-});
+// inputElement.addEventListener('keydown', function (event) {
+//     console.log(event.target.value);
+// });
+
+
+// let elem = document.getElementById("redDiv");
+// function setColorToDiv(event){
+//     event.target.style.backgroundColor = "red";
+// }
+// elem.addEventListener("mousemove",setColorToDiv);
+// elem.removeEventListener("mousemove", setColorToDiv);
+
+
+// function greet(name) {
+//     alert(`Hello ${name}`);
+// }
+
+// function sum(num, num1) {
+//     return num + num1;
+// }
+
+// document.getElementById("greet").addEventListener('click', function () {
+//     greet("Trajan");
+//     let result = sum(5, 5);
+//     console.log(result);
+// });
+
+// function printResult(message, element) {
+//     element.innerHTML = '';
+//     element.innerHTML = message;
+// }
+
+// let inputOne = document.getElementById("number-1");
+// let inputTwo = document.getElementById("number-2");
+// let calculateBtn = document.getElementById("calculate");
+// let resultDiv = document.getElementById("result");
+
+// calculateBtn.addEventListener('click', function () {
+//     let valueOne = inputOne.value;
+//     let valueTwo = inputTwo.value;
+//     let result = valueOne + valueTwo;
+//     printResult(result, resultDiv);
+// });
+
+// let errorDiv = document.getElementById("error");
+// let emailInput = document.getElementById("email");
+
+// emailInput.addEventListener("keyup", function (event) {
+//     let value = event.target.value;
+//     if (value.length <= 8) {
+//         errorDiv.innerText = "Your email is not valid";
+//     } else {
+//         errorDiv.innerText = '';
+//     }
+// });
