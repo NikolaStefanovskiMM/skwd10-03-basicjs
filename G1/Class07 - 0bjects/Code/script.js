@@ -41,6 +41,7 @@ var user = new Object(); // {}
 console.log(user);
 user.name = "Jon";
 user.surname = "Doe";
+user.age = 25;
 console.log(user);
 user.name = "Change";
 console.log(user);
@@ -48,6 +49,11 @@ user.printName = function () {
     console.log(this.name + " " + this.surname);
 }
 user.printName();
+console.log(user);
+delete user.age;
+console.log(user);
+console.log(user.age);
+
 var userLiteral = {};
 console.log(userLiteral)
 
@@ -71,3 +77,75 @@ let secondNum = firstNum;
 secondNum = 10;
 console.log(firstNum);
 console.log(secondNum);
+
+// change object properties
+let person = {
+    name: 'Bob',
+    lastName: 'Barker'
+ };
+ Object.keys(person).forEach((key) => {
+    person[key] += " changed";
+ });
+ console.log(person);
+
+ // constructor function
+ function Hotel(name, rooms, booked) {
+     this.name = name;
+     this.rooms = rooms;
+     this.booked = booked;
+     this.hasParking = true;
+     this.checkAvailability = function () {
+         console.log(this);
+         return this.rooms - this.booked;
+     }
+ }
+
+ const hotel1 = new Hotel("Hilton", 45, 12);
+ const hotel2 = new Hotel("Rusia", 40, 10);
+ console.log(hotel1);
+ console.log(hotel2);
+ console.log(hotel2.checkAvailability());
+
+ // this and scopes
+ console.log(this.innerHeight);
+ console.log(this.innerWidth);
+
+ function getSize() {
+     return this.innerHeight;
+ }
+ console.log("this is the inner height of the browser " + getSize());
+
+ let size = {
+     innerHeight: 50,
+     innerWidth: 60,
+     getObjSize: function() {
+         return this.innerHeight;
+     }
+ };
+ console.log("this is the inner height of the object " + size.getObjSize());
+
+ var width = 600;
+ let shape = {
+     width: 300
+ };
+ function showWidth() {
+     return this.width;
+ }
+ shape.showWidth = showWidth;
+ console.log(shape.showWidth());
+console.log(showWidth());
+
+// car example
+function Car(model, color, year, fuel, fuelConsumption) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+    this.fuel = fuel;
+    this.fuelConsumption = fuelConsumption;
+    this.calculate = function (distance) {
+        return distance * (this.fuelConsumption/100)
+    }
+}
+var car1 = new Car("toyota", "blue", 2018, "disel", 6.6);
+console.log(car1);
+console.log(car1.calculate(12));
