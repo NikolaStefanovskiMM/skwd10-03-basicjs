@@ -41,6 +41,7 @@ var user = new Object(); // {}
 console.log(user);
 user.name = "Jon";
 user.surname = "Doe";
+user.age = 25;
 console.log(user);
 user.name = "Change";
 console.log(user);
@@ -48,6 +49,11 @@ user.printName = function () {
     console.log(this.name + " " + this.surname);
 }
 user.printName();
+console.log(user);
+delete user.age;
+console.log(user);
+console.log(user.age);
+
 var userLiteral = {};
 console.log(userLiteral)
 
@@ -71,3 +77,13 @@ let secondNum = firstNum;
 secondNum = 10;
 console.log(firstNum);
 console.log(secondNum);
+
+// change object properties
+let person = {
+    name: 'Bob',
+    lastName: 'Barker'
+ };
+ Object.keys(person).forEach((key) => {
+    person[key] += " changed";
+ });
+ console.log(person);
