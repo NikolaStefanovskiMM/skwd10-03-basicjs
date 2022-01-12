@@ -147,5 +147,27 @@ function Car(model, color, year, fuel, fuelConsumption) {
     }
 }
 var car1 = new Car("toyota", "blue", 2018, "disel", 6.6);
+car1.doors = 5;
+var car2 = new Car("bmw", "black", 2019, "disel", 10);
+
 console.log(car1);
+console.log("THIS IS THE SECOND CAR");
+console.log(car2);
 console.log(car1.calculate(12));
+
+let owner = {
+    name: "Greg",
+    pet: {
+        name: "Sparky",
+        type: "dog"
+    }
+}
+console.log("this is the pet name " + owner.pet.name);
+
+let owner2 = {...owner};
+owner2.name = "Name Change";
+owner2.pet.name = "pet changed";
+console.log("this is the name of the first owner " + owner.name);
+console.log("this is the name of the second owner " + owner2.name);
+console.log("this is the name of the first pet " + owner.pet.name);
+console.log("this is the name of the second pet " + owner2.pet.name);
