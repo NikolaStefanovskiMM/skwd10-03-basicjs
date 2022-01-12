@@ -5,7 +5,7 @@ $(document).ready(function() {
     console.log(paragraph);
     let h1 = $('div h1').first();
     console.log(h1);
-    let button = $("button")[0];
+    let button = $("button");
     console.log(button);
 
     console.log(document.getElementsByTagName("input")[0].value);
@@ -22,4 +22,7 @@ $(document).ready(function() {
     h1.css("color", "red");// Changing CSS 
     h1.before("<p>This is added before h1</p>");
     h1.after("<p>This is added after h1</p>");
+
+    h1.text("JQuery is awesome");
+    button.css("background-color", "red");
 });
