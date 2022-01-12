@@ -25,4 +25,13 @@ $(document).ready(function() {
 
     h1.text("JQuery is awesome");
     button.css("background-color", "red");
+
+    button.on("click", function() {
+        console.log("Hello");
+    });
+
+    button.click(function(e) {
+        console.log("Hello for other click");
+        console.log(e);
+    });
 });
