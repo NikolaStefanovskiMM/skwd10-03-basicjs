@@ -24,7 +24,7 @@ GAME RULES:
 */
 
 // INITIAL VALUES
-const gameWinningScore = 100;
+const gameWinningScore = 10;
 let playerOneScore = 0;
 let playerTwoScore = 0;
 let currentScore = 0;
@@ -56,12 +56,75 @@ function newGame() {
 }
 
 function rollDice() {
+
+    if (!isGameOn) {
+        return;
+    }
     
     let diceOne = Math.floor(Math.random() * 6 + 1);
     let diceTwo = Math.floor(Math.random() * 6 + 1);
 
-    console.log("Dice one", diceOne);
-    console.log("Dice two", diceTwo);
+    document.querySelector(".dice").src = "./dice/dice-" + diceOne + ".png";
+    document.querySelector(".dice2").src = `./dice/dice-${diceTwo}.png`;
+
+    if (diceOne !== 1 && diceTwo !== 1) {
+        currentScore += diceOne + diceTwo;
+        
+        if (activePlayer === 0) {
+            playerOneCurrentScoreElement.innerText = currentScore;
+        } else {
+            playerTwoCurrentScoreElement.innerText = currentScore;
+        }
+    } else {
+        nextPlayer();
+    }
+}
+
+function holdCurrentScore() {
+    
+    if (!isGameOn) {
+        return;
+    }
+
+    if (activePlayer === 0) {
+        playerOneScore += currentScore;
+        playerOneTotalScoreElement.innerText = playerOneScore;
+        nextPlayer();
+    } else {
+        playerTwoScore += currentScore;
+        playerTwoTotalScoreElement.innerText = playerTwoScore;
+        nextPlayer();
+    }
+    checkForWinner();
+}
+
+function nextPlayer() {
+    currentScore = 0;
+
+    if (activePlayer === 0) {
+        playerOneCurrentScoreElement.innerText = currentScore;
+    } else {
+        playerTwoCurrentScoreElement.innerText = currentScore;
+    }
+
+    document.querySelector(`.player-${activePlayer}-panel`).classList.remove("active");
+    //activePlayer = activePlayer === 0 ? 1 : 0;
+    if (activePlayer === 0) {
+        activePlayer = 1;
+    } else {
+        activePlayer = 0;
+    }
+    document.querySelector(`.player-${activePlayer}-panel`).classList.add("active");
+}
+
+function checkForWinner() {
+    if (playerOneScore >= gameWinningScore) {
+        isGameOn = false;
+        alert("Player 1 is the Winner");
+    } else if (playerTwoScore >= gameWinningScore) {
+        isGameOn = false;
+        alert("Player 2 is the Winner");
+    }
 }
 
 // EVENTS
@@ -69,4 +132,8 @@ newGameButton.addEventListener('click', newGame);
 
 rollButton.addEventListener('click', function () {
     rollDice();
-})
+});
+
+holdButton.addEventListener('click', function () {
+    holdCurrentScore(); 
+});
