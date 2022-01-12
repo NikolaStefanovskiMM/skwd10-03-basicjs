@@ -33,5 +33,12 @@ $(document).ready(function() {
     button.click(function(e) {
         console.log("Hello for other click");
         console.log(e);
+        secondWrapper.hide();
+        $("p").css("color", "green");
+        //button.text("Don't click me");
+        e.target.innerText = "Don't click me";
+    });
+    $(document).click(function(e) {
+        console.log(e.target);
     });
 });
