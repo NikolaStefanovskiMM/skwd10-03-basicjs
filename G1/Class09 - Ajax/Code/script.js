@@ -21,12 +21,21 @@ console.log("APP IS FINISHED");
 
 // calling API with ajax
 $("button").click(function(){
-    console.log("button click start");
-    $.ajax({
-        url: "https://pokeapi.co/api/v2/ability",
-        success: function(result) {
-            console.log(result);
-        }
-    });
-    console.log("button click end");
-})
+    $.ajax({url: "https://pokeapi.co/api/v2/type/3",
+    success: function(result){
+        console.log(result);
+    }});
+});
+
+const container = $('#container')[0];
+for (let i = 1; i < 100; i++) {
+   $.ajax({
+      url: `https://pokeapi.co/api/v2/pokemon/${i}`,
+      success: function(res) {
+         let img = res.sprites.back_default;
+         let image = document.createElement('img');
+         image.setAttribute('src', img);
+         container.appendChild(image);
+      }
+   });
+}
