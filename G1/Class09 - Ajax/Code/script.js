@@ -1,5 +1,6 @@
 console.log("APP IS STARTED");
 
+// calling API with vanilla javascript
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -17,3 +18,15 @@ xhttp.open("GET", "https://pokeapi.co/api/v2/ability");
 xhttp.send();
 
 console.log("APP IS FINISHED");
+
+// calling API with ajax
+$("button").click(function(){
+    console.log("button click start");
+    $.ajax({
+        url: "https://pokeapi.co/api/v2/ability",
+        success: function(result) {
+            console.log(result);
+        }
+    });
+    console.log("button click end");
+})
