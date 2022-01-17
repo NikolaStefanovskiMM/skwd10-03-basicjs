@@ -70,5 +70,118 @@ objLiteral["age"] = 33;
 
 console.log(obj);
 
-delete objLiteral.name;
-console.log(objLiteral);
+// delete objLiteral.name;
+// console.log(objLiteral);
+
+function getFullName() {
+    return `${objLiteral.name} ${objLiteral.lastName}`;
+}
+
+objLiteral.getFullName = getFullName;
+
+objLiteral.getName = function () {
+    return objLiteral.name;
+}
+
+// console.log(objLiteral);
+
+function Person(name, dob, job) {
+    this.name = name;
+    this.yearOfBirth = dob;
+    this.job = job;
+
+    this.calculateAge = function () {
+        let currentYear = new Date().getFullYear();
+        return currentYear - this.yearOfBirth;
+    }
+
+    this.getNameWithTitle = function () {
+        return `mr. ${this.name}`;
+    }
+
+    this.greet = function () {
+        return `Hello ${this.name}, how are you?`;
+    }
+}
+
+let trajan = new Person("Trajan", 1987, "Trainer");
+let nikola = new Person("Nikola", 1990, "Assistant");
+
+// console.log(trajan);
+// console.log(nikola);
+
+// console.log(trajan.calculateAge());
+// console.log(nikola.calculateAge());
+
+let bob = new Person("Bob", 1999, "Support");
+
+let p1 = {
+    name: "",
+    lastName: "",
+    age: "",
+    calculateAge: function () {
+        return "";
+    },
+    getFullName: function () {
+        
+    }
+};
+
+let p2 = {
+    name: "",
+    lastName: "",
+    age: "",
+    calculateAge: function () {
+        return "";
+    }
+};
+
+let p3 = {
+    name: "",
+    lastName: "",
+    age: "",
+    calculateAge: function () {
+        return "";
+    }
+};
+
+
+window.sayHello = function () {
+    console.log(this);
+}
+
+function sayHello1() {
+    console.log(this);
+}
+
+// sayHello();
+// sayHello1();
+
+function Car(name) {
+    this.name = name;
+
+    this.getCarName = function () {
+        console.log(this);
+    }
+}
+
+let car = new Car("Mazda");
+
+car.getCarName();
+car.sayHello = sayHello1;
+
+car.sayHello();
+
+
+
+
+let p3 = {
+    name: "", // proprerty
+    lastName: "",
+    age: "",
+    calculateAge: function () { // method
+        return "";
+    }
+};
+
+let p18 = new Person("Trajan", 1111, "Job");
