@@ -52,3 +52,15 @@ if (x > 0) {
 } else if (x > 20) {
 
 }
+let days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
+console.log(days[days.length - 1]); 
+days[days.length] = 'other day';
+days.push("another day", "and another day");
+console.log(days);
+
+for(let i = 0; i < days.length; i++) {
+    if (days[i] === 'Fri') {
+        continue;
+    }
+    console.log(days[i]);
+}
