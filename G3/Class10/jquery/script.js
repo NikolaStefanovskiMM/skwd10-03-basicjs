@@ -92,8 +92,30 @@ $(document).ready(function () {
 
     btn.css("background-color", "red");
 
-    $("form").submit(function( event ) {
-        console.log( $(this).serializeArray() );
+    $("form").submit(function (event) {
+        console.log($(this).serializeArray());
         event.preventDefault();
-      });
+    });
+
+    let button = $("button").first();
+    // simple on event click
+    button.on("click", function () {
+        console.log("Hello");
+    })
+    // Even simpler click event
+    button.click(function (e) {
+        console.log("HELLO AGAIN");
+    })
+
+    // Catching an event
+    button.click(function (e) {
+        console.log(e);
+    })
+
+    button.addEventListener("click", function () {
+        console.log("hey");
+    })
+    button.click(function () {
+        console.log("hey");
+    })
 })
