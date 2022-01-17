@@ -43,4 +43,48 @@ $(document).ready(function () {
     let firstChildHeaders = $("h3:first-child"); // gets all the first h3 elements in their parents
     let lastChildParagraphs = $("p:last-child"); // gets all the last p elements in their parents
     let secondChildParagraphs = $("p:nth-child(2)"); // gets all the second place p elements in their parents
+
+    // Get first and last element from JQuery array
+    allElements.first();
+    //console.log(allElements.first());
+    allElements.last();
+    //console.log(allElements.last());
+    // Find elements in JQuery array
+    allElements.find(".wrapper").find("p").last();
+    //console.log(allElements.find(".wrapper").find("p").last());
+    // Get DOM element from JQuery array
+    allElements[0];
+    allElements.get(0);
+    //console.log(allElements.get(0));
+    // Get all DOM elements from a JQuery array
+    byClassElements.get();
+    // Get next or previous element
+    firstParagraph.next();
+    //console.log(firstParagraph.next());
+    firstParagraph.prev();
+
+
+    $("input").first().val();// get value from input
+    secondChildParagraphs.hide();// hide elements
+    secondChildParagraphs.show();// show elements
+    byClassElements.first().html();// get innerHTML
+    byClassElements.first().html(`<h1> This is a new h1! </h1>`);// set innerHTML
+    byTagNameElements.last().text();// get text
+    byTagNameElements.last().text("This is a new text");// set text
+    byTagNameElements.last().css("color");// getting CSS
+    byTagNameElements.last().css("color", "red");// Changing CSS
+    $("h1").first().after("<p>new p tag after the h1</p>");
+    $("h1").first().before("<p>new p tag before the h1</p>");
+
+    document.getElementsByTagName("input")[0].value;
+    $("input").first().val();
+
+    document.getElementsByClassName("header")[0].innerHTML;
+    $(".header").first().html();// get innerHTML
+
+    document.getElementsByClassName("header")[0].innerText = "hey";
+    $(".header").first().text("hey");
+
+    document.getElementsByClassName("header")[0].style.color = "red";
+    $(".header").first().css("color", "red");
 })
