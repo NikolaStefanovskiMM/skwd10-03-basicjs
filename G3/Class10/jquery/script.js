@@ -76,15 +76,24 @@ $(document).ready(function () {
     $("h1").first().after("<p>new p tag after the h1</p>");
     $("h1").first().before("<p>new p tag before the h1</p>");
 
-    document.getElementsByTagName("input")[0].value;
-    $("input").first().val();
+    // document.getElementsByTagName("input")[0].value;
+    // $("input").first().val();
 
-    document.getElementsByClassName("header")[0].innerHTML;
-    $(".header").first().html();// get innerHTML
+    // document.getElementsByClassName("header")[0].innerHTML;
+    // $(".header").first().html();// get innerHTML
 
-    document.getElementsByClassName("header")[0].innerText = "hey";
-    $(".header").first().text("hey");
+    // document.getElementsByClassName("header")[0].innerText = "hey";
+    // $(".header").first().text("hey");
 
-    document.getElementsByClassName("header")[0].style.color = "red";
-    $(".header").first().css("color", "red");
+    // document.getElementsByClassName("header")[0].style.color = "red";
+    // $(".header").first().css("color", "red");
+
+    let btn = $('button').first();
+
+    btn.css("background-color", "red");
+
+    $("form").submit(function( event ) {
+        console.log( $(this).serializeArray() );
+        event.preventDefault();
+      });
 })
