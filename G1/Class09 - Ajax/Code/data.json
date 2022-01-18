@@ -1,0 +1,10 @@
+{
+  "trainer": "Trainer Name",
+  "assistant": "Assistant Name",
+  "students": ["Bob", "Samantha", "Chris", "Jill", "Greg"],
+  "Academy": "Code",
+  "books": [
+    { "name": "title", "author": "bob" },
+    { "name": "title", "author": "bob" }
+  ]
+}
