@@ -30,6 +30,6 @@ Welcome to the JavaScript Basic subject. Throughout this subject, we will learn 
 
 ## Contact 📡
 
-Trainer Name: trainer email
+Trainer Name: bojan.zdravkovski@gmail.com
 
-Assistant Name: assistant email
+Assistant Name: borisovski.borce@gmail.com
