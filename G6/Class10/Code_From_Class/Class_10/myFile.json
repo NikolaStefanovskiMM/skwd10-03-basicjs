@@ -1,0 +1,12 @@
+{
+  "firstName": "Goce",
+  "lastName": "Kabov",
+  "age": 29,
+  "isCoronaPositive": false,
+  "subjects": ["JS", "HTML", "CSS"],
+  "address": {
+    "street": "Some street",
+    "number": 22,
+    "city": "Skopje"
+  }
+}
