@@ -20,3 +20,21 @@ $("#btn").on('click', function () {
         }
     });
 })
+
+
+// $.ajax({
+//     url: "https://swapi.dev/api/people/1",
+//     //method: "GET", // by default is get
+//     success: function (response) {
+//         console.log(response);
+
+//         setTimeout(() => {
+//             $("#btn").on('click', function () {
+//                 console.log(response);
+//             })
+//         }, 10000);
+//     },
+//     error: function (error) {
+//         console.log(error);
+//     }
+// });
